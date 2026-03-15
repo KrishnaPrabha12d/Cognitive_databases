@@ -1,0 +1,5 @@
+--- SCHEMA FOR quiz_results ---
+CREATE TABLE quiz_results (quiz_id INTEGER PRIMARY KEY AUTOINCREMENT, learner_id TEXT, concept_id TEXT, question_id TEXT, selected_option TEXT, is_correct INTEGER, confidence INTEGER, time_taken_sec REAL, attempt_no INTEGER, timestamp TEXT)
+
+--- SCHEMA FOR knowledge_state ---
+CREATE TABLE knowledge_state (student_id TEXT PRIMARY KEY, state_json TEXT NOT NULL, updated_at TEXT NOT NULL)
